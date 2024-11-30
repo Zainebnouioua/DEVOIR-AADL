@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="6c9b5e5d-58b5-4a98-9b36-70e371b629ff" manual="true">
+    <element uuid="0c7c9c54-ee68-4136-b0c6-98486cd77265" manual="true">
+      <bo>
+        <seg>connection</seg>
+        <seg>actuator_to_bus</seg>
+      </bo>
+      <bendpoints>
+        <point x="852.0" y="360.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="5ee69d5e-4e09-42db-a5ab-277f314025ec" manual="true">
+      <element uuid="c6ebcda9-9a6b-4cdc-8ba9-400ffcf18513" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>controller_to_actuator</seg>
+      </bo>
+    </element>
+    <element uuid="a874fec5-1099-4dd5-a218-39874675498c" manual="true">
+      <element uuid="f42571f9-00d2-4714-8831-a36caf806c41" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>controller_to_actuatore</seg>
+      </bo>
+      <bendpoints>
+        <point x="828.0" y="320.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="77dd4662-4378-4c70-b78b-72042d0c8b13" manual="true">
+      <element uuid="c75a9b70-72d8-498e-8be9-cfb082e021e4" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>controller_to_actuators</seg>
+      </bo>
+      <bendpoints>
+        <point x="715.0" y="274.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="5f98a423-44b7-4d1b-b597-c147c168c806" manual="true">
+      <bo>
+        <seg>connection</seg>
+        <seg>processor_to_bus</seg>
+      </bo>
+    </element>
+    <element uuid="ecc82fa8-38c2-49d0-a934-8079cda76d91" manual="true">
+      <bo>
+        <seg>connection</seg>
+        <seg>sensor_to_bus</seg>
+      </bo>
+    </element>
+    <element uuid="94333246-952b-44c2-b243-33612b4d7b83" manual="true">
+      <element uuid="6bcb0771-d34d-40a2-9bc6-1ec6b41774db" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>sensor_to_controller</seg>
+      </bo>
+    </element>
+    <element uuid="14e7c573-dab4-49e8-be61-729fbc136fc8" manual="true">
+      <element uuid="6339b8fa-555b-4f7e-b5b7-7018a3399501" manual="true" dockArea="bottom">
+        <bo>
+          <seg>feature</seg>
+          <seg>signal</seg>
+        </bo>
+        <position x="140.0" y="136.0"/>
+      </element>
+      <element uuid="7c242293-d5fe-420f-abd9-f386a99bff2d" manual="true" dockArea="bottom">
+        <bo>
+          <seg>feature</seg>
+          <seg>status</seg>
+        </bo>
+        <position x="870.0" y="136.0"/>
+      </element>
+      <element uuid="2f112782-fd13-400f-a0cf-8a47c880a7cc" manual="true" dockArea="bottom">
+        <bo>
+          <seg>feature</seg>
+          <seg>turn_off</seg>
+        </bo>
+        <position x="590.0" y="136.0"/>
+      </element>
+      <element uuid="aceaf48d-1a24-4f23-b7d0-65ee610633c7" manual="true" dockArea="bottom">
+        <bo>
+          <seg>feature</seg>
+          <seg>turn_on</seg>
+        </bo>
+        <position x="480.0" y="136.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>controller</seg>
+      </bo>
+      <position x="150.0" y="20.0"/>
+      <size width="1010.0" height="160.0"/>
+    </element>
+    <element uuid="c365ef6b-be48-439f-8214-a2c02578ff72" manual="true">
+      <element uuid="6383f002-a240-478b-b11b-611e5e2db250" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>bus_access</seg>
+        </bo>
+        <position y="105.0"/>
+      </element>
+      <element uuid="be521736-8e7e-4327-b8f4-020ad58d6856" manual="true" dockArea="top">
+        <bo>
+          <seg>feature</seg>
+          <seg>signal_status</seg>
+        </bo>
+        <position x="40.0"/>
+      </element>
+      <element uuid="e0c5aa95-3c38-42b1-b235-78c12c1a2c7e" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>turn_off</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="089f6d18-d7e6-4d48-8702-06542a2363af" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>turn_on</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>light_act</seg>
+      </bo>
+      <position x="940.0" y="230.0"/>
+      <size width="380.0" height="170.0"/>
+    </element>
+    <element uuid="86377890-aa6e-435b-8b6f-46d7cb4f6050" manual="true">
+      <element uuid="64977316-ad23-4595-9d75-cf0e675397e7" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>bus_access</seg>
+        </bo>
+        <position x="367.58984375" y="60.0"/>
+      </element>
+      <element uuid="0af7734a-a5c7-428d-8230-5898078bf09d" manual="true" dockArea="top">
+        <bo>
+          <seg>feature</seg>
+          <seg>signal_detected</seg>
+        </bo>
+        <position x="210.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>light_sensor</seg>
+      </bo>
+      <position x="20.0" y="240.0"/>
+      <size width="450.0" height="170.0"/>
+    </element>
+    <element uuid="524dfb2b-38cb-4ff0-9a7d-ec4f64b1ad90" manual="true">
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>this_bus</seg>
+      </bo>
+      <position x="600.0" y="290.0"/>
+      <size width="150.0" height="80.0"/>
+    </element>
+    <element uuid="4d77e61a-6528-45b3-88ee-5289a32ac2cf" manual="true">
+      <element uuid="bf5dd6c3-8c38-4240-b14f-81959e7ee736" manual="true" dockArea="top">
+        <bo>
+          <seg>feature</seg>
+          <seg>bus_access</seg>
+        </bo>
+        <position x="270.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>this_processor</seg>
+      </bo>
+      <position x="390.0" y="520.0"/>
+      <size width="418.71484375" height="60.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>Light_Devices.impl</seg>
+    </bo>
+    <position x="20.0" y="10.0"/>
+    <size width="1360.0" height="630.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>Light_Devices::Light_Devices.impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>

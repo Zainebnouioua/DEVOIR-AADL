@@ -1,0 +1,80 @@
+package Light_Devices
+public
+
+   
+   system Light_Devices
+   end Light_Devices;
+
+   system implementation Light_Devices.impl
+   subcomponents
+      light_sensor: device light_sensor.impl;   
+      controller: process controller.impl;      
+      light_act: device light_act.impl;        
+      this_bus: bus communication_bus.impl;    
+      this_processor: processor processing_unit.impl; 
+   connections
+      sensor_to_controller: port light_sensor.signal_detected -> controller.signal;  
+      controller_to_actuator: port controller.status -> light_act.signal_status; 
+      controller_to_actuators: port controller.turn_on -> light_act.turn_on;
+      controller_to_actuatore: port controller.turn_off -> light_act.turn_off;  
+      sensor_to_bus: bus access light_sensor.bus_access <-> this_bus; 
+      actuator_to_bus: bus access light_act.bus_access <-> this_bus;   
+      processor_to_bus: bus access this_processor.bus_access <-> this_bus; 
+      
+       
+   end Light_Devices.impl;
+
+   
+   device light_sensor
+   features
+      signal_detected: out event port;  
+      bus_access: requires bus access communication_bus.impl;
+      
+   end light_sensor;
+
+   device implementation light_sensor.impl
+   end light_sensor.impl;
+
+   
+   process controller
+   features
+      signal: in event port;            -- Réception du signal du capteur
+      turn_on: out event port;         -- Commande d'allumage
+      turn_off: out event port;        -- Commande d'extinction
+      status: out data port;           -- État du contrôleur
+   end controller;
+
+   process implementation controller.impl
+   end controller.impl;
+
+  
+   device light_act
+   features
+      signal_status: in data port;     
+      turn_on: in event port;          
+     turn_off: in event port;       
+      bus_access: requires bus access communication_bus.impl;
+      
+   end light_act;
+
+   device implementation light_act.impl
+   end light_act.impl;
+
+ 
+   bus communication_bus
+end communication_bus;
+
+   bus implementation communication_bus.impl
+   end communication_bus.impl;
+
+   -- Définition du processeur
+   processor processing_unit
+   	features
+      bus_access: requires bus access communication_bus.impl;
+      
+   end processing_unit;
+
+   processor implementation processing_unit.impl
+   end processing_unit.impl;
+
+end Light_Devices;
